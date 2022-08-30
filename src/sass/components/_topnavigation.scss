@@ -1,0 +1,46 @@
+.topnavigation__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 73px;
+
+  .topnavigation__container--left {
+    h1 {
+      font-family: $rubik-font;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 28px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+
+  .topnavigation__container--right {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.5rem;
+      font-family: $rubik-font;
+
+      &:hover {
+        color: #fff;
+      }
+
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+    }
+
+    .topnavigation__container--right--mobile {
+      display: none;
+
+      @media screen and (max-width: 1024px) {
+        display: block;
+      }
+    }
+  }
+}
