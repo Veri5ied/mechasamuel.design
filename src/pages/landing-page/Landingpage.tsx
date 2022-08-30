@@ -38,10 +38,10 @@ const Landingpage = () => {
         </div>
 
         <div className="landingpage__project--cards">
-          {/*  <LeftCard
+           <LeftCard
             imgUrl={MySario}
             title="MySario"
-            content="MySario is an application for university students to manage classes and easily generate class list for their lecturers"
+            content="MySario is an application for university studentsto manage classes and easily generate class list for their lecturers"
             linkUrl=""
             linkName="View case study"
           />
@@ -65,7 +65,7 @@ const Landingpage = () => {
             content="Customizing and shortening links made it easy."
             linkUrl=""
             linkName="View case study"
-          /> */}
+          />
         </div>
       </div>
     </div>
