@@ -59,6 +59,10 @@
         line-height: 49px;
         color: #ffffff;
         margin: 0;
+
+        @media screen and (max-width: 578px) {
+          font-size: 1.25rem;
+        }
       }
 
       .strokes {
@@ -66,6 +70,12 @@
         height: 5px;
         background: #ffffff;
       }
+    }
+
+    .landingpage__project--cards {
+      display: grid;
+      gap: 4em;
+      margin-top: 2em;
     }
   }
 }
