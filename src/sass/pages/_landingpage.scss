@@ -1,10 +1,17 @@
 .landingpage__container {
   .landingpage__hero {
+    /* background: url("../../assets/svgs/Background.svg");
+    background-size: cover;
+    background-repeat: no-repeat; */
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 8vh;
+
+    @media screen and (max-width: 578px) {
+      padding-top: 0;
+    }
 
     .landingpage__hero--header {
       h1 {
@@ -41,6 +48,10 @@
       align-items: flex-end;
       justify-content: center;
       margin-top: 12rem;
+
+      @media screen and (max-width: 578px) {
+        margin-top: 8em;
+      }
     }
   }
 
