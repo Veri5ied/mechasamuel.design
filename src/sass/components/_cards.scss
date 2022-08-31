@@ -4,10 +4,21 @@
   justify-content: space-between;
   background: #282828;
 
+  @media screen and (max-width: 572px) {
+    flex-direction: column-reverse;
+    width: 350px;
+    gap: 2em;
+  }
+
   .card__container__left {
     padding-left: 2em;
     display: grid;
     gap: 2em;
+
+    @media screen and (max-width: 572px) {
+      padding: 0;
+    }
+
     h1 {
       font-size: 2.5rem;
       font-family: $fraunces-font;
@@ -19,6 +30,11 @@
       height: 60px;
       color: #333333;
       text-align: center;
+
+      @media screen and (max-width: 572px) {
+        font-size: 1.56rem;
+        width: 180px;
+      }
     }
 
     p {
@@ -29,6 +45,11 @@
       line-height: 28px;
       color: #ffffff;
       width: 543px;
+
+      @media screen and (max-width: 572px) {
+        font-size: 0.875rem;
+        width: 276px;
+      }
     }
 
     a {
@@ -42,6 +63,11 @@
       margin-top: 4em;
       margin-bottom: 0;
       display: grid;
+
+      @media screen and (max-width: 572px) {
+        font-size: 0.875rem;
+        margin: 2em 0;
+      }
 
       .highlight {
         background: linear-gradient(180deg, #f47bff 0%, #6c54ff 100%);
@@ -59,6 +85,12 @@
   justify-content: space-between;
   background: #282828;
 
+  @media screen and (max-width: 572px) {
+    flex-direction: column;
+    width: 350px;
+    gap: 2em;
+  }
+
   .card__container__right {
     display: grid;
     gap: 2em;
@@ -73,6 +105,11 @@
       height: 60px;
       color: #333333;
       text-align: center;
+
+      @media screen and (max-width: 572px) {
+        font-size: 1.56rem;
+        width: 180px;
+      }
     }
 
     p {
@@ -83,6 +120,11 @@
       line-height: 28px;
       color: #ffffff;
       width: 543px;
+
+      @media screen and (max-width: 572px) {
+        font-size: 0.875rem;
+        width: 276px;
+      }
     }
 
     a {
@@ -97,6 +139,11 @@
       margin-bottom: 0;
       display: grid;
 
+      @media screen and (max-width: 572px) {
+        font-size: 0.875rem;
+        margin: 2em 0;
+      }
+
       .highlight {
         background: linear-gradient(180deg, #f47bff 0%, #6c54ff 100%);
         width: 116px;
@@ -109,6 +156,10 @@
 
 img {
   width: 559px;
+
+  @media screen and (max-width: 572px) {
+    width: 350px;
+  }
 }
 
 .works__container {
