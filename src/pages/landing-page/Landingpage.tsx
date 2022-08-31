@@ -1,6 +1,7 @@
 import { BsArrowDownCircle } from "react-icons/bs";
 import LeftCard from "../../components/cards/LeftCard";
 import RightCard from "../../components/cards/RightCard";
+import Works from "../../components/cards/Works";
 import {
   MySario,
   BeVerified,
@@ -10,7 +11,34 @@ import {
   Accessibility,
   SwipePlug,
   Throtty,
+  LinkedIn,
+  Behance,
+  Medium,
+  Twitter,
 } from "../../assets";
+
+const worksItem = [
+  {
+    caption: "Familiarity in UX",
+    imgUrl: Familiarity,
+    linkUrl: "",
+  },
+  {
+    caption: "Design System",
+    imgUrl: DesignSystem,
+    linkUrl: "",
+  },
+  {
+    caption: "Accessibility in UX",
+    imgUrl: Accessibility,
+    linkUrl: "",
+  },
+  {
+    caption: "Mixlr UX case study",
+    imgUrl: Mixlr,
+    linkUrl: "",
+  },
+];
 
 const Landingpage = () => {
   return (
@@ -69,9 +97,59 @@ const Landingpage = () => {
         </div>
       </div>
       <div className="landingpage__work__samples">
-        <div className="landingpage__projects--header">
-          <h2>Featured Projects</h2>
+        <div className="landingpage__work--header">
+          <h2>Other Works</h2>
           <div className="strokes"></div>
+        </div>
+        <div className="works__list">
+          {worksItem.map(({ caption, imgUrl, linkUrl }, index) => (
+            <Works
+              key={index}
+              caption={caption}
+              imgUrl={imgUrl}
+              linkUrl={linkUrl}
+            />
+          ))}
+        </div>
+      </div>
+      <div className="getintouch__container">
+        <div className="getintouch--header">
+          <h2>Get In Touch</h2>
+          <div className="strokes"></div>
+        </div>
+        <div className="getintouch__content">
+          <p>Mechaifeanyisamuel@gmail.com</p>
+          <div className="social__profiles">
+            <a
+              href="https://medium.com/@samuelmechaife"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Medium} alt="Medium" />
+            </a>
+            <a
+              href="https://www.behance.net/samuelmechaife"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Behance} alt="Behance" />
+            </a>
+
+            <a
+              href="https://twitter.com/samuelmechaife"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={Twitter} alt="Twitter" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/samuel-mechaife-a-a8a8a813/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={LinkedIn} alt="LinkedIn" />
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -110,3 +110,41 @@
 img {
   width: 559px;
 }
+
+.works__container {
+  display: grid;
+  gap: 1.3em;
+
+  p {
+    font-family: $fraunces-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 25px;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  a {
+    font-family: $rubik-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: #ffffff;
+    display: flex;
+    margin-bottom: 0;
+    display: grid;
+
+    &:hover {
+      color: #fff;
+    }
+
+    .highlight {
+      background: linear-gradient(180deg, #f47bff 0%, #6c54ff 100%);
+      width: 116px;
+      height: 4px;
+      border-radius: 5px;
+    }
+  }
+}
