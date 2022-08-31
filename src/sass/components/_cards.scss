@@ -40,9 +40,11 @@
       color: #ffffff;
       display: flex;
       margin-top: 4em;
+      margin-bottom: 0;
+      display: grid;
 
       .highlight {
-        background-color: linear-gradient(180deg, #f47bff 0%, #6c54ff 100%);
+        background: linear-gradient(180deg, #f47bff 0%, #6c54ff 100%);
         width: 116px;
         height: 4px;
         border-radius: 5px;
@@ -92,9 +94,11 @@
       color: #ffffff;
       display: flex;
       margin-top: 4em;
+      margin-bottom: 0;
+      display: grid;
 
       .highlight {
-        background-color: linear-gradient(180deg, #f47bff 0%, #6c54ff 100%);
+        background: linear-gradient(180deg, #f47bff 0%, #6c54ff 100%);
         width: 116px;
         height: 4px;
         border-radius: 5px;

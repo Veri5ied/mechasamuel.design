@@ -11,6 +11,7 @@ const LeftCard = ({ imgUrl, title, content, linkUrl, linkName }: CardProps) => {
         <p>{content}</p>
         <a href={linkUrl} target="_blank" rel="noreferrer">
           {linkName}
+          <div className="highlight"></div>
         </a>
       </div>
     </div>
