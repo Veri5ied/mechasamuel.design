@@ -2,6 +2,7 @@ import { BsArrowDownCircle } from "react-icons/bs";
 import LeftCard from "../../components/cards/LeftCard";
 import RightCard from "../../components/cards/RightCard";
 import Works from "../../components/cards/Works";
+import { motion } from "framer-motion";
 import {
   MySario,
   BeVerified,
@@ -51,13 +52,18 @@ const Landingpage = () => {
             accessibility of products with seamless user experience.
           </p>
         </div>
-        <div className="landingpage__arrow">
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 400, damping: 17 }}
+          className="landingpage__arrow"
+        >
           <BsArrowDownCircle
             color="#fff"
             size={40}
             style={{ cursor: "pointer" }}
           />
-        </div>
+        </motion.div>
       </div>
       <div className="landingpage__projects">
         <div className="landingpage__projects--header">
