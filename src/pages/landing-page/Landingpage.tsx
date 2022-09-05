@@ -58,15 +58,17 @@ const Landingpage = () => {
           transition={{ type: "spring", stiffness: 400, damping: 17 }}
           className="landingpage__arrow"
         >
-          <BsArrowDownCircle
-            color="#fff"
-            size={40}
-            style={{ cursor: "pointer" }}
-          />
+          <a href="#scroll">
+            <BsArrowDownCircle
+              color="#fff"
+              size={40}
+              style={{ cursor: "pointer" }}
+            />
+          </a>
         </motion.div>
       </div>
       <div className="landingpage__projects">
-        <div className="landingpage__projects--header">
+        <div className="landingpage__projects--header" id="scroll">
           <h2>Featured Projects</h2>
           <div className="strokes"></div>
         </div>
