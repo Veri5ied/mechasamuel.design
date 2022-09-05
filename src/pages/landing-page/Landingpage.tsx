@@ -22,22 +22,22 @@ const worksItem = [
   {
     caption: "Familiarity in UX",
     imgUrl: Familiarity,
-    linkUrl: "",
+    linkUrl: "https://link.medium.com/Z771jaaGSsb",
   },
   {
     caption: "Design System",
     imgUrl: DesignSystem,
-    linkUrl: "",
+    linkUrl: "https://link.medium.com/hwIJgkgGSsb",
   },
   {
     caption: "Accessibility in UX",
     imgUrl: Accessibility,
-    linkUrl: "",
+    linkUrl: "https://link.medium.com/ZvaGo7dGSsb",
   },
   {
     caption: "Mixlr UX case study",
     imgUrl: Mixlr,
-    linkUrl: "",
+    linkUrl: "https://link.medium.com/xQRQ7ykGSsb",
   },
 ];
 
@@ -76,7 +76,7 @@ const Landingpage = () => {
             imgUrl={MySario}
             title="MySario"
             content="MySario is an application for university studentsto manage classes and easily generate class list for their lecturers"
-            linkUrl=""
+            linkUrl="https://play.google.com/store/apps/details?id=com.mysario.app"
             linkName="View case study"
           />
           <RightCard
@@ -90,7 +90,7 @@ const Landingpage = () => {
             imgUrl={SwipePlug}
             title="SwipePlug"
             content="Swipeplug makes it easy to list your business and products to gain and retain customers online."
-            linkUrl=""
+            linkUrl="https://www.Swipeplug.com"
             linkName="View Project"
           />
           <RightCard
